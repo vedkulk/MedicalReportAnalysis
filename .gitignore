@@ -10,72 +10,55 @@
 !.yarn/releases
 !.yarn/versions
 
+# logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
 # testing
 /coverage
+/jest-test-results.json
+/coverage-final.json
 
-# next.js
+# Next.js build and cache
 /.next/
 /out/
+/.vercel/
+/dist/
+/.cache/
 
 # production
 /build
 
-# misc
-.DS_Store
-*.pem
+# static files
+/public/uploads/
+/public/temp/
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+# environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
-# typescript
+# TypeScript build files
 *.tsbuildinfo
 next-env.d.ts
-# Created by https://www.toptal.com/developers/gitignore/api/nextjs
-# Edit at https://www.toptal.com/developers/gitignore?templates=nextjs
 
-### NextJS ###
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
+# Editor & OS files
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Misc
 *.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# local env files
-.env*.local
-
-# vercel
-.vercel
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+*.log
+*.lock
 
 # End of https://www.toptal.com/developers/gitignore/api/nextjs
